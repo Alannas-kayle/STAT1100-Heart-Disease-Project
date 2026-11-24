@@ -7,7 +7,7 @@ We will build and tune a decision tree to predict whether
 a patient has heart disease.
 
 ## Group Members
--Anson
--Kuan
--Zhongyuan
--Anthony
+- Anson
+- Kuan
+- Zhongyuan
+- Anthony
