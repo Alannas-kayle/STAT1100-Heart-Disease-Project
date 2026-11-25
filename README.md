@@ -9,5 +9,5 @@ a patient has heart disease.
 ## Group Members
 - Anson
 - Kuan
-- Zhongyuan
+- Eric
 - Anthony
