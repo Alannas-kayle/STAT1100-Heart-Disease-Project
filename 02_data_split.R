@@ -1,8 +1,10 @@
-# Part 2: Stratified 80/20 Data.
-# Run Part 1 first to create the cleaned heart_data.
-# The target column must already be a factor.
+# Part 2: Stratified 80/20 Data Partitioning
+# Run 01_load_and_clean.R first.
 
 library(caret)
+
+# Connect to the cleaned data from Part 1
+heart_data <- heart_cleaned
 
 set.seed(123)
 
@@ -15,10 +17,10 @@ train_index <- createDataPartition(
 train_data <- heart_data[train_index, ]
 test_data <- heart_data[-train_index, ]
 
-# Check the number of rows
-nrow(train_data)
-nrow(test_data)
+# Check dataset sizes
+print(nrow(train_data))
+print(nrow(test_data))
 
-# Check the class counts
-table(train_data$target)
-table(test_data$target)
+# Check class counts
+print(table(train_data$target))
+print(table(test_data$target))
