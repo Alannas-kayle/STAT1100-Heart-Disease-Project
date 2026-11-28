@@ -68,11 +68,11 @@ plot(
 
 predictions <- predict(tuned_tree, newdata = test_data)
 
-confustion_table <- table(Actual = test_data$target, Predicted = predictions)
+confusion_table <- table(Actual = test_data$target, Predicted = predictions)
 
 correct_counts <- sum(diag(confusion_table))
 
-total_counts <- sum(confustion_table)
+total_counts <- sum(confusion_table)
 test_accuracy <- correct_counts/total_counts
 
 cat("\nFinal Calculated Test Accuracy Rate:",round(test_accuracy*100, 2), "%\n")
